@@ -1,0 +1,47 @@
+.contact {
+    padding-top: 20px;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.contact-content {
+    font-size: 2rem;
+}
+
+.contact-subhead {
+    margin: 10px 0;
+    color: var(--text-dark);
+}
+
+.socials {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 15px;
+    margin-top: 0;
+}
+
+.mail-svg,
+.socials-svg {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.25s ease-out;
+}
+
+.mail-svg span {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+}
+
+.socials-svg:hover,
+.mail-svg:hover,
+.mail-svg p:hover {
+    color: var(--accent-light-hover);
+}
+
+.mail-svg:hover>.mail-svg p {
+    color: var(--accent-light-hover);
+}

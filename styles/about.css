@@ -1,0 +1,123 @@
+.about {
+    display: flex;
+    height: 100vh;
+}
+
+#wave {
+    display: inline-block;
+    animation: wave 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    70% {
+        transform: rotate(10deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.row {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.profile-pic {
+    width: 25vw;
+    border-radius: 30px;
+    border-color: var(--accent-dark);
+    border-style: solid;
+    border-width: 3px;
+    transition: border-color 0.5s ease-out;
+}
+
+.profile-pic:hover {
+    border-color: var(--accent-light);
+}
+
+.name {
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+.abouttext {
+    font-size: 1.25em;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.downloadresume {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100 !important;
+    color: var(--accent-light);
+    border-color: var(--accent-light);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: auto;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-out;
+}
+
+.downloadresume:hover {
+    color: var(--background);
+    background-color: var(--accent-light);
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100 !important;
+    color: var(--background);
+    background-color: var(--accent-light);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 7px 20px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-out;
+}
+
+.contact-button:hover {
+    background-color: rgb(42, 147, 154);
+    background-color: var(--accent-light-hover);
+}

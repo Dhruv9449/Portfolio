@@ -1,0 +1,80 @@
+.education {
+    padding-top: 25px;
+}
+
+.timeline {
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::after {
+    content: '';
+    width: 1px;
+    display: inline-block;
+    position: absolute;
+    background-color: var(--text-light);
+    top: 0;
+    bottom: 0;
+    margin-left: 40px;
+}
+
+.edu-list {
+    list-style: none;
+}
+
+.years {
+    margin: 20px;
+}
+
+.edu-content {
+    margin: 20px;
+    padding: 5px;
+    background-color: var(--accent-dark);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: background-color 0.75s ease-out;
+}
+
+.edu-elements {
+    margin-bottom: 20px;
+}
+
+.edu-elements::before {
+    content: "";
+    position: absolute;
+    display: inline;
+    background-color: var(--checkpoint);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    margin-left: -8px;
+    margin-top: -5px;
+    transition: box-shadow 0.75s ease-out;
+}
+
+.edu-elements:hover>.edu-content {
+    background-color: var(--accent-light-hover);
+}
+
+.edu-elements:hover:before {
+    box-shadow: 0 0 10px var(--text-light);
+}
+
+.edu-content h3,
+h4 {
+    margin-bottom: 8px;
+}
+
+.edu-content p {
+    margin-top: 8px;
+}
+
+.edu-content h4 {
+    margin-top: 0;
+    font-weight: 400;
+    color: var(--text-dark);
+}

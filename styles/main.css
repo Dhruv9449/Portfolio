@@ -1,0 +1,144 @@
+@import url(navbar.css);
+@import url(about.css);
+@import url(education.css);
+@import url(skills.css);
+@import url(projects.css);
+@import url(contact.css);
+@import url(footer.css);
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background: rgb(2, 12, 28);
+    --nav-background: rgba(2, 12, 28, 0.9);
+    --accent-dark: rgba(29, 42, 62, 0.818);
+    --accent-light: rgb(57, 188, 197);
+    --accent-light-hover: rgba(44, 149, 156, 0.7);
+    --text-light: white;
+    --text-dark: rgb(145, 145, 145);
+    --checkpoint: aqua;
+    scrollbar-color: var(--accent-light) var(--background);
+    scrollbar-width: 5px;
+}
+
+:root.extradark-theme {
+    --background: rgb(0, 0, 0);
+    --nav-background: rgba(0, 0, 0, 0.9);
+    --accent-dark: rgba(62, 29, 29, 0.818);
+    --accent-light: rgb(224, 52, 52);
+    --accent-light-hover: rgba(195, 70, 70, 0.7);
+    --text-light: white;
+    --text-dark: rgb(145, 145, 145);
+    --checkpoint: rgb(255, 55, 0);
+}
+
+:root.light-theme {
+    --background: rgb(228, 247, 247);
+    --nav-background: rgba(228, 247, 247, 0.9);
+    --accent-dark: rgba(148, 239, 241, 0.818);
+    --accent-light: rgb(0, 32, 68);
+    --accent-light-hover: rgba(0, 176, 176, 0.7);
+    --text-light: rgb(0, 0, 0);
+    --text-dark: rgb(75, 75, 75);
+    --checkpoint: rgb(15, 96, 95);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: var(--text-light);
+    font-family: 'Teko', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+body {
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+.main {
+    padding: 0 20%;
+}
+
+.preloader {
+    overflow: hidden;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--background);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 9999;
+}
+
+.preloader-logo {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    animation: preload 1s;
+}
+
+@keyframes preload {
+    0% {
+        opacity: 0
+    }
+    10% {
+        opacity: 0.1
+    }
+    20% {
+        opacity: 0.2
+    }
+    30% {
+        opacity: 0.3
+    }
+    40% {
+        opacity: 0.4
+    }
+    50% {
+        opacity: 0.5
+    }
+    60% {
+        opacity: 0.6
+    }
+    70% {
+        opacity: 0.7
+    }
+    80% {
+        opacity: 0.8
+    }
+    90% {
+        opacity: 0.9
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--accent-light);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-light);
+}
