@@ -5,6 +5,23 @@
 @import url(projects.css);
 @import url(contact.css);
 @import url(footer.css);
+
+
+/* Fonts  */
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: local(''), 
+          url('../assets/Fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url('../assets/Fonts/Teko/Teko-Regular.ttf') format('truetype');
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -122,6 +139,7 @@ body {
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -151,8 +169,14 @@ body::-webkit-scrollbar-thumb:hover {
 
     html, body {
         overflow-x: hidden;
+        overflow-y: hidden;
       }
-      body {
-        position: relative
-      }
+    body {
+        position: relative;
+    }
+
+    .preloader-logo {
+        height: 200px;
+        width: 200px;
+    }
 }

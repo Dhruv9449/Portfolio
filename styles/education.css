@@ -87,4 +87,26 @@ h4 {
     .edu-elements::before {
         margin-left: -28px;
     }
+
+    .edu-content {
+        font-size: 1.1rem;
+    }
+
+    .edu-content h3,
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    .edu-content h4 {
+        font-weight: 300;
+    }
+
+    .edu-content p {
+        font-size: 0.8rem;
+    }
+
+    .edu-elements p, 
+    .edu-content {
+        margin-left: 5px;
+    }
 }

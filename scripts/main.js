@@ -6,6 +6,7 @@ window.onload = (event) => {
 function hidePreloader() {
     document.getElementById("preloader").style.display = 'none';
     document.body.style = 'overflow-y: auto';
+    document.documentElement.style = 'overflow-y: auto';
 }
 
 // THEME CHANGER
