@@ -45,3 +45,14 @@
 .mail-svg:hover>.mail-svg p {
     color: var(--accent-light-hover);
 }
+
+
+@media only screen and (max-width: 768px) {
+    .socials {
+        column-gap: 10px;
+    }
+
+    .contact-content {
+        font-size: 1.5rem;
+    }
+}

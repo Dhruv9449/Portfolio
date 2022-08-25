@@ -106,3 +106,24 @@
 .slidebutton:hover {
     color: var(--accent-light-hover)
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .projects-list {
+        width: 99%;
+        height: fit-content;
+    }
+
+    .projects-ele {
+        width: 99%;
+        height: fit-content;
+    }
+
+    .project-link {
+        height: fit-content;
+    }
+
+    .project-description {
+        font-size: 1em;
+    }
+}

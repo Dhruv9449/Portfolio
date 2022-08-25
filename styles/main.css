@@ -142,3 +142,17 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background: var(--accent-light);
 }
+
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 0 10%;
+    }
+
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+}

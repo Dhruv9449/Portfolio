@@ -121,3 +121,31 @@
     background-color: rgb(42, 147, 154);
     background-color: var(--accent-light-hover);
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-pic {
+        width: 50vw;
+    }
+    .name {
+        font-size: 2em;
+    }
+    .abouttext {
+        font-size: 1em;
+    }
+    .button-row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .downloadresume {
+        margin: auto;
+    }
+    .contact-button {
+        margin: auto;
+    }
+}

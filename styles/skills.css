@@ -28,3 +28,18 @@
 .skills-ele:hover>.skill-name {
     color: var(--accent-light-hover);
 }
+
+@media only screen and (max-width: 1000px) {
+    .skills {
+        margin: 50px 0;
+    }
+    .skills-list {
+        display: block;
+        flex-direction: row;
+        row-gap: 15px;
+    }
+    .skills-ele {
+        display: inline-block;
+        font-size: 2rem;
+    }
+}
