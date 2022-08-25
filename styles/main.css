@@ -140,6 +140,7 @@ body {
 
 html {
     overflow-x: hidden;
+    overflow-y: hidden;
     scroll-behavior: smooth;
 }
 
